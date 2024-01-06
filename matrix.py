@@ -1,16 +1,16 @@
-def create_matrix(row_number, column_number):
-    Matrix = [[] for _ in range(row_number)]
-    RowNumber = 1
-    for Row in Matrix:
-        print("Row " + str(RowNumber))
-        ColumnNumber = 1
-        for Column in range(column_number):
-            ColumnValue = int(input("\tEnter value in column " + str(ColumnNumber) + ": "))
-            Row.append(ColumnValue)
-            ColumnNumber += 1
-        RowNumber += 1
+def creer_matrice(nombre_lignes, nombre_colonne):
+    Matrice = [[] for _ in range(nombre_lignes)]
+    NumeroLigne = 1
+    for Ligne in Matrice:
+        print("Ligne " + str(NumeroLigne))
+        NumeroColonne = 1
+        for Column in range(nombre_colonne):
+            ColumnValue = int(input("\tEntrez la valeur dans la colonne " + str(NumeroColonne) + ": "))
+            Ligne.append(ColumnValue)
+            NumeroColonne += 1
+        NumeroLigne += 1
         
-    return Matrix
+    return Matrice
 
-Matrix = create_matrix(3, 3)
-print(Matrix)
+Matrice = creer_matrice(3, 3)
+print(Matrice)
