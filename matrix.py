@@ -18,7 +18,7 @@ def nombre_colonne(matrice):
 
 def longueur_max_dans_une_colone(numero_colonne, matrice):
     LongueurMax = 1
-    for Ligne in Matrix:
+    for Ligne in matrice:
         Longueur = len(str(Ligne[numero_colonne]))
         if Longueur > LongueurMax:
             LongueurMax = Longueur
@@ -55,6 +55,3 @@ def afficher_matrice(matrice):
     LongueurMaxDesColonnes = longueurs_max_des_colonnes(matrice)
     for Ligne in matrice:
         print(afficher_ligne(Ligne, LongueurMaxDesColonnes))
-
-Matrix = creer_matrice(3, 3)
-afficher_matrice(Matrix)
