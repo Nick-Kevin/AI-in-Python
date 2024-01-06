@@ -18,7 +18,7 @@ def get_number_of_columns(matrix):
 
 def get_max_length_on_column(column_number, matrix):
     MaxLength = 1
-    for Row in Matrix:
+    for Row in matrix:
         LenghtOfColumn = len(str(Row[column_number]))
         if LenghtOfColumn > MaxLength:
             MaxLength = LenghtOfColumn
@@ -55,6 +55,3 @@ def display_matrix(matrix):
     MaxLengthForEachColumns = get_max_length_on_columns(matrix)
     for Row in matrix:
         print(display_row(Row, MaxLengthForEachColumns))
-
-Matrix = create_matrix(3, 3)
-display_matrix(Matrix)
